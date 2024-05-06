@@ -99,7 +99,7 @@ void StlWidget::initShaders() {
 //! [4]
 void StlWidget::initTextures() {
   // Load cube.png image
-  texture = new QOpenGLTexture(QImage("../../cube.png").mirrored());
+  texture = new QOpenGLTexture(QImage("../../texture.png").mirrored());
 
   // Set nearest filtering mode for texture minification
   texture->setMinificationFilter(QOpenGLTexture::Nearest);

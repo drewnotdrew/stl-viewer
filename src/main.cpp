@@ -6,6 +6,7 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QSurfaceFormat>
+#include <QTimer>
 #include <QToolBar>
 #include <QWidget>
 #include <Qt>
@@ -80,12 +81,15 @@ int main(int argc, char *argv[]) {
   // main_window
   //     .
 
+  action_open
+      ->triggered()
+
   // main_toolbar->show();
 #else
   QLabel note("OpenGL Support required");
   note.show();
 #endif
-  return app.exec();
+          return app.exec();
 }
 // Copyright (C) 2016 The Qt Company Ltd.
 // SPDX-License-Identifier: LicenseRef-Qt-Commercial OR BSD-3-Clause
